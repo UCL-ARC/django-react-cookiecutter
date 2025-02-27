@@ -26,4 +26,19 @@ example:
 "frontend_package_manager": "npm",
 ```
 
-## 
+## Django REST api routing
+
+communication between backend and frontend is done via api routing.
+```python
+# your_project_slug/urls.py
+
+router = routers.DefaultRouter()
+router.register(r'logins', views.LoginDetailView, 'logins')
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
+]
+```
+
+this will allow react to fetch information from api
