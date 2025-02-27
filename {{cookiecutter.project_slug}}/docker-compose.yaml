@@ -6,11 +6,10 @@ services:
       - "8000:8000"
     volumes:
       - ./backend:/app
-    depends_on:
-      - db
   frontend:
     build: ./frontend
     ports:
-      - "3000:3000"
+      - "5173:5173"
     volumes:
       - ./frontend:/app
+      - /frontend/src/app/node_modules
