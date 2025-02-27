@@ -4,8 +4,6 @@
 
 This template is used for web development project that uses Django and React + Vite.js
 
-The 
-
 ## Quickstart
 
 Run cookiecutter against this repo's url:  
@@ -42,3 +40,20 @@ urlpatterns = [
 ```
 
 this will allow react to fetch information from api
+
+## React router
+
+**WIP**
+
+## Docker
+
+```bash
+$ cd <project_slug>
+$ docker-compose build
+```
+
+## Use in production settings
+
+**WIP**
+
+
