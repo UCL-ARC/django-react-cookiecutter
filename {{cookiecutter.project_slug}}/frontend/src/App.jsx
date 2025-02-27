@@ -1,4 +1,12 @@
 import { useEffect, useState } from "react";
+import { Button, IconButton } from "@mui/material";
+import "./App.css";
+import { Dehaze as DehazeIcon } from "@mui/icons-material";
+import { useState } from "react";
+import { LoginModal } from "./LoginSignup/LoginModal";
+import { SideMenu } from "./Menus/SideMenu";
+import { Footer } from "./Menus/Footer";
+
 
 function App() {
     const [message, setMessage] = useState("");
