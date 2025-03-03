@@ -8,7 +8,7 @@ This template is used for web development project that uses Django and React + V
 
 Run cookiecutter against this repo's url:  
 ```python 
-cookiecutter https://github.com/shiyingwucl/cookiecutter 
+cookiecutter https://github.com/UCL-ARC/django-react-cookiecutter
 ```
 
 This will prompt the following configurations for your project:
