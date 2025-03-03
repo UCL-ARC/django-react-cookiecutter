@@ -53,14 +53,19 @@ this will allow react to fetch information from api
 
 ## Docker
 
+To create and run the docker stack, you would first need to run `npm install` on the frontend, otherwise `npm run dev` would fail in the Dockerfiles:
+
 ```bash
-$ cd <project_slug>
+$ cd <project_slug/frontend>
+$ npm install
+```
+You can proceed to build and run the docker stack with:
+```bash
 $ docker compose up -d --build
 ```
-> - docker compose up:  
-Starts the services defined in docker-compose.yml
-> - --build: Forces a rebuild of the images before starting the containers. This ensures that any changes to the Dockerfiles or dependencies are applied.
-> - --detach (or -d): Runs the containers in the background (detached mode), so the terminal is not blocked by logs and you can continue using it.
+- `docker compose up`: Runs the services defined in docker-compose.yml  
+- `--build` : Forces a rebuild of the images before starting the containers, ensures any changes to the Dockerfiles or dependencies are applied.
+- `--detach` (or `-d`): Runs the containers in the background (detached mode), so the terminal is not blocked by logs and you can continue using it.
 
 ## Use in production settings
 
