@@ -6,6 +6,12 @@ This template is used for web development project that uses Django and React + V
 
 ## Quickstart
 
+Create a virtual environment first and make sure cookiecutter is installed
+
+```python
+pip install cookiecutter
+```
+
 Run cookiecutter against this repo's url:  
 ```python 
 cookiecutter https://github.com/UCL-ARC/django-react-cookiecutter
@@ -13,14 +19,14 @@ cookiecutter https://github.com/UCL-ARC/django-react-cookiecutter
 
 This will prompt the following configurations for your project:
 
-example:
+Default values (applied when inputting enter):
 ```json
 "project_name": "My Django React App",
-"project_slug": "django-vite",
+"project_slug": "my_django_react_app",
 "author_name": "Your Name",
 "email": "you@example.com",
 "description": "Django + React template",
-"use_docker": ["y", "n"],
+"use_docker": "y",
 "frontend_package_manager": "npm",
 ```
 
