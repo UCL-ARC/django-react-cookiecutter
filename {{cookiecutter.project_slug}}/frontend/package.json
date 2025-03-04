@@ -18,6 +18,7 @@
 		"@mui/icons-material": "^5.11.11",
 		"@mui/material": "^5.11.11",
 		"formik": "^2.2.9",
+		
 		"yup": "^1.0.2"
 	},
 	"devDependencies": {
